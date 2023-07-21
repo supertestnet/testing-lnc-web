@@ -462,7 +462,7 @@ const Home = () => {
   if (!firstconnection) firstConnection();
   const laterconnection = async () => {
     connected = true;
-    await getNote("connect");
+    // await getNote("connect");
     try {
       setLoading(true);
       setError('');
@@ -53177,7 +53177,7 @@ function createSocketURL(parsedURL) {
     slashes: true
   });
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createSocketURL);
+/* harmony default export */ //const __WEBPACK_DEFAULT_EXPORT__ = (createSocketURL);
 
 /***/ }),
 
