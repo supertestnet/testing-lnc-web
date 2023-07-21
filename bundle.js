@@ -374,7 +374,6 @@ var _jsxFileName = "/home/supertestnet/lnc-web/demos/connect-demo/src/pages/Home
 
 // new phrase: donkey view tackle stuff recycle pioneer keep off shove unveil
 
-// localStorage["lnc-web:default"] = `{"salt":"Ne3BVBCHeArXJPM5J40tesscugvFAs7B","cipher":"U2FsdGVkX1/hSeTkKCwjo2NrDQr6vIbzFHtwOtks2nzz2dJrQyV9qDn5oC2kL77QQJErkXPUdWLK9t5xrpA+zw==","serverHost":"mailbox.terminal.lightning.today:443","localKey":"U2FsdGVkX19pHMkM1v8HeyQlbDkmGWIQLqrXzLvujfOaCHiwI8Xia7jVy94Sc1PSd78gda73Y4eVWUdmoTPivZvs/K/Mq+mJAbRnaH5Pn+i7Zk0P+nOM4d/pDvC0MnGR","remoteKey":"U2FsdGVkX1+rjsYniBFbS6C6OnaD3rltAmBg8E7/MXvxZfF6x9ToWH3YrhXzH6XJBnMFPvCh3EVpOPvBcXGDs7X+mWG6qRRW4zCNIlNjeI2qIe+mbdCdBz3Ug4yJ33OC","pairingPhrase":"U2FsdGVkX19BMjEs0B6qmrAEuwyXIQlBQFvUQ8GNAC0wa2T1EoAoq/708Y/4RBDWD1e7KANZ9aokw0MPzJhfqdofx4kPvuPBboptyHb/zUcyzE/MLvSRwvrCWtFzwX02"}`;
 var mylnc = null;
 var connected = false;
 var firstconnection = false;
@@ -448,6 +447,7 @@ const Home = () => {
       // connect to the litd node via LNC
       await connect(phrase, password);
       connected = true;
+      // localStorage["lnc-web:default"] = `{"salt":"Ne3BVBCHeArXJPM5J40tesscugvFAs7B","cipher":"U2FsdGVkX1/hSeTkKCwjo2NrDQr6vIbzFHtwOtks2nzz2dJrQyV9qDn5oC2kL77QQJErkXPUdWLK9t5xrpA+zw==","serverHost":"mailbox.terminal.lightning.today:443","localKey":"U2FsdGVkX19pHMkM1v8HeyQlbDkmGWIQLqrXzLvujfOaCHiwI8Xia7jVy94Sc1PSd78gda73Y4eVWUdmoTPivZvs/K/Mq+mJAbRnaH5Pn+i7Zk0P+nOM4d/pDvC0MnGR","remoteKey":"U2FsdGVkX1+rjsYniBFbS6C6OnaD3rltAmBg8E7/MXvxZfF6x9ToWH3YrhXzH6XJBnMFPvCh3EVpOPvBcXGDs7X+mWG6qRRW4zCNIlNjeI2qIe+mbdCdBz3Ug4yJ33OC","pairingPhrase":"U2FsdGVkX19BMjEs0B6qmrAEuwyXIQlBQFvUQ8GNAC0wa2T1EoAoq/708Y/4RBDWD1e7KANZ9aokw0MPzJhfqdofx4kPvuPBboptyHb/zUcyzE/MLvSRwvrCWtFzwX02"}`;
     } catch (err) {
       setError(err.message);
       // tslint:disable-next-line: no-console
