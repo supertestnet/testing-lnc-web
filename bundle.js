@@ -425,7 +425,6 @@ var checkinvoice = async () => {
 };
 const Home = () => {
   _s();
-  console.log( "yoop" );
   const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [error, setError] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
   const {
